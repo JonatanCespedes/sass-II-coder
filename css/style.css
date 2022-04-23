@@ -1,0 +1,120 @@
+/* Var de operaciones */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+.box_uno {
+  background-color: blue;
+  width: 720px;
+  height: 360px; }
+
+.box_dos {
+  background-color: green;
+  width: 310px;
+  height: 620px; }
+
+.box_condicionales {
+  height: 10rem;
+  width: 100%;
+  background-color: blue; }
+  @media (min-width: 768px) {
+    .box_condicionales {
+      width: 50%;
+      background-color: green; } }
+  @media (min-width: 992px) {
+    .box_condicionales {
+      width: 100%;
+      background-color: red; } }
+
+.box_bucle {
+  background-color: lightblue;
+  margin: 1rem; }
+
+.width-1 {
+  width: 11em; }
+
+.width-2 {
+  width: 12em; }
+
+.width-3 {
+  width: 13em; }
+
+.width-4 {
+  width: 14em; }
+
+.height-1 {
+  height: 25em; }
+
+.height-2 {
+  height: 50em; }
+
+.height-3 {
+  height: 75em; }
+
+/* Ejemplo each */
+.blue {
+  color: blue; }
+
+.yellow {
+  color: yellow; }
+
+.orange {
+  color: orange; }
+
+.size-2 {
+  font-size: 2rem; }
+
+.size-3 {
+  font-size: 3rem; }
+
+.size-4 {
+  font-size: 4rem; }
+
+.font__Arial {
+  font-family: Arial;
+  color: green; }
+
+.font__Cambria {
+  font-family: Cambria;
+  color: blue; }
+
+.font__Georgia {
+  font-family: Georgia;
+  color: red; }
+
+.font__maps {
+  color: green;
+  font-size: 2rem;
+  padding: 2rem; }
+
+.header {
+  background-color: green; }
+
+.btn, .btn-enviar, .btn-cancelar {
+  border: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+
+.btn-enviar {
+  background-color: greenyellow;
+  color: white; }
+
+.btn-cancelar {
+  background-color: red;
+  color: white; }
+
+.box__mixin {
+  height: 300px;
+  width: 250px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center; }

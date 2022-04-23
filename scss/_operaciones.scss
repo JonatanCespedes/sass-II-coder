@@ -1,0 +1,11 @@
+.box_uno {
+    background-color: $blue;
+    width: $ancho;
+    height: $ancho/2;
+}
+
+.box_dos {
+    background-color: $green;
+    width: ($ancho/2) - 50;
+    height: $ancho - 100;
+}

@@ -1,0 +1,30 @@
+.box_bucle {
+    background-color: lightblue;
+    margin: 1rem;
+}
+
+@for $i from 1 through 4 {
+    .width-#{$i} {
+        width: 10em + $i;
+    }
+}
+
+@for $i from 1 to 4 {
+    .height-#{$i} {
+        height: 25em * $i;
+    }
+}
+
+/* Ejemplo each */
+
+@each $color in blue, yellow, orange {
+    .#{$color} {
+        color: #{$color};
+    }
+}
+
+@each $size in 2, 3, 4 {
+    .size-#{$size} {
+        font-size: #{$size}rem;
+    }
+}

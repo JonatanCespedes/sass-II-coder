@@ -1,0 +1,28 @@
+$fonts: (
+    Arial:green,
+    Cambria: blue,
+    Georgia: red
+);
+
+@each $font, $color in $fonts {
+    .font__#{$font} {
+        font-family: #{$font};
+        color: #{$color};
+    }
+}
+
+$estilos:(
+    color: green,
+    fontSize: 2rem,
+    espaciado: 2rem,
+);
+
+.font__maps{
+    color: map-get($estilos, color);
+    font-size: map-get($estilos, fontSize);
+    padding: map-get($estilos, espaciado);
+}
+
+.header {
+    background-color: map-get($estilos, color);
+}

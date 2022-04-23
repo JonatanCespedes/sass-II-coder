@@ -1,0 +1,16 @@
+@mixin boxSizes($width, $height){
+    height: $height;
+    width: $width;
+}
+
+@mixin centrarEnCaja(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box__mixin {
+    @include boxSizes(250px, 300px);
+    border: 1px solid black;
+    @include centrarEnCaja;
+}

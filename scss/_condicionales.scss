@@ -1,0 +1,23 @@
+$vista: mobile;
+
+.box_condicionales {
+    height: 10rem;
+    width: 100%;
+    background-color: blue;
+    @media (min-width: 768px){
+        $vista:tablet;
+        @if $vista == tablet {
+            width: 50%;
+            background-color: green;
+        }
+    }
+    @media (min-width: 992px){
+        $vista: desktop;
+        @if $vista == desktop {
+            width: 100%;
+            background-color: red;
+        }
+    }
+}
+
+
